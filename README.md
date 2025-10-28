@@ -322,7 +322,5 @@ Karthik sai - [aksai0511@gmail.com](mailto:aksai0511@gmail.com)
 
 Project GitHub: [https://github.com/karthiksai2000/MERNSTACK](https://github.com/karthiksai2000/MERNSTACK)
 
-\<div align="center"\>
-\<br /\>
+
 Give a ⭐️ if this project helped you\!
-\</div\>
