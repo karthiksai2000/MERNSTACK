@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🏥 Prescripto — Modern Hospital Management System</h1>
+  <h1>🏥 Pulse — Modern Hospital Management System</h1>
   <p>
     A comprehensive, full-stack hospital management solution for modern healthcare facilities.
     Streamline patient care, appointments, and administrative workflows with Prescripto.
@@ -100,8 +100,6 @@
 - **Mongoose** - MongoDB object modeling
 - **JWT** - JSON Web Tokens for authentication
 - **Multer** - File uploads
-- **Razorpay** - Payment integration
-- **Stripe** - Payment processing
 
 ### Development Tools
 - **ESLint** - Code linting
@@ -149,22 +147,6 @@ npm run dev
 
 Visit `http://localhost:5173` in your browser.
 
-## 🔧 Environment Variables
-
-### Backend (`.env`)
-```env
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-JWT_EXPIRE=30d
-NODE_ENV=development
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_key
-CLOUDINARY_API_SECRET=your_cloudinary_secret
-RAZORPAY_KEY_ID=your_razorpay_key
-RAZORPAY_SECRET=your_razorpay_secret
-STRIPE_SECRET_KEY=your_stripe_secret
-STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
 ```
 
 ## 📂 Project Structure
@@ -219,9 +201,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📧 Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - your.email@example.com
+Karthik sai - aksai0511@gmail.com
 
-Project Link: [https://github.com/yourusername/Prescripto-Hospital_Management_System](https://github.com/yourusername/Prescripto-Hospital_Management_System)
+Project Link: https://github.com/karthiksai2000/MERNSTACK
 
 ## ⭐ Show your support
 
@@ -355,17 +337,3 @@ Please include tests where appropriate and follow existing coding style.
 - Do not commit `.env` or any secrets. Add `.env` to `.gitignore`.
 - Rotate any credentials leaked accidentally.
 - Use strong `JWT_SECRET` and secure password policies.
-
-## License
-
-Add a license file (`LICENSE`) and state the license here (e.g., MIT).
-
----
-
-If you want, I can also:
-
-- Create a `.env.example` file and add `.env` to `.gitignore`.
-- Add a minimal `postcss.config.js` and `tailwind.config.js` in `frontend` if Tailwind is used but missing.
-- Run the dev server and capture errors (I can help fix blank-page issues live).
-
-Tell me which follow-up you'd like.
