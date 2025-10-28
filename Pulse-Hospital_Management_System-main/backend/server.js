@@ -15,11 +15,43 @@ const port = process.env.PORT || 4000;
 connectDB();
 connectCloudinary();
 
-// ✅ Allow all origins (for development only)
-app.use(cors({ origin: "*" }));
+// --- START CORS CONFIGURATION ---
+
+// 1. Define your allowed origins (whitelist)
+const allowedOrigins = [
+    'https://mernstack-an9m.vercel.app/',
+  'https://mernstack-66zz.vercel.app', // Your deployed frontend
+  'http://localhost:5173'              // Your local development frontend
+];
+
+// 2. Create CORS options
+const corsOptions = {
+  origin: function (origin, callback) {
+    // Check if the origin is in the whitelist or if it's a request from Postman (no origin)
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('This origin is not allowed by CORS'));
+    }
+  },
+  methods: 'GET, POST, PUT, DELETE, PATCH, OPTIONS', // Allow all standard methods
+  credentials: true, // Allow cookies/headers to be sent
+};
+
+// 3. Apply CORS middleware
+// This handles all standard requests (GET, POST, etc.)
+app.use(cors(corsOptions));
+
+// 4. *** THE KEY FIX ***
+// Explicitly handle all OPTIONS preflight requests
+// This will intercept the "preflight" check and send back the correct headers.
+app.options('*', cors(corsOptions));
+
+// --- END CORS CONFIGURATION ---
 
 
 // Middlewares
+// This MUST come *after* the CORS configuration
 app.use(express.json());
 
 // API endpoints
