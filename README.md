@@ -294,9 +294,7 @@ If a seeder script doesn't exist, you can manually create an admin by:
   * **Credential Rotation:** If you accidentally leak credentials, rotate them (change passwords, generate new API keys, create a new `JWT_SECRET`) immediately.
   * **JWT Secret:** Use a strong, long, and random string for your `JWT_SECRET` in production.
 
-<!-- end list -->
 
-```
 
 -----
 
