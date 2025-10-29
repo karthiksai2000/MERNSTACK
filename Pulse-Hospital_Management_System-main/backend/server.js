@@ -19,7 +19,7 @@ connectCloudinary();
 
 // 1. Define your allowed origins (whitelist)
 const allowedOrigins = [
-    'https://mernstack-an9m.vercel.app/',
+    'https://mernstack-an9m.vercel.app',
   'https://mernstack-66zz.vercel.app', // Your deployed frontend
   'http://localhost:5173'     ,
       'http://localhost:5174'              // Your local development frontend
