@@ -21,7 +21,8 @@ connectCloudinary();
 const allowedOrigins = [
     'https://mernstack-an9m.vercel.app/',
   'https://mernstack-66zz.vercel.app', // Your deployed frontend
-  'http://localhost:5173'              // Your local development frontend
+  'http://localhost:5173'     ,
+      'http://localhost:5174'              // Your local development frontend
 ];
 
 // 2. Create CORS options
