@@ -4,10 +4,6 @@
 
 A comprehensive, full-stack hospital management solution to streamline patient care, appointments, and administrative workflows.
 
-> **Note:** For a truly "jaw-dropping" effect, add a high-quality GIF of your project in action here!
->
-> `![Pulse Demo GIF](link-to-your.gif)`
-
 ---
 
 ### Live Demo Links
